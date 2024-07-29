@@ -7,7 +7,7 @@ import assessmentRouter from "./routes/assessment.js";
 
 export const App = express();
 
-dotenv.config({ path: "./config/.env" });
+dotenv.config();
 
 App.use(express.json());
 App.use(cors({ origin: "http://localhost:5173" }));
