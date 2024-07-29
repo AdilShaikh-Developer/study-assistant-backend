@@ -16,6 +16,7 @@ App.get("/", (req, res) => {
   res.json({
     success: true,
     message: "App is successfully started",
+    client: process.env.CLIENT_URL,
   });
 });
 
