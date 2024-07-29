@@ -10,7 +10,7 @@ export const App = express();
 dotenv.config();
 
 App.use(express.json());
-App.use(cors({ origin: "http://localhost:5173" }));
+App.use(cors());
 
 App.get("/", (req, res) => {
   res.json({
